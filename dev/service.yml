@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
+  name: ngnix
 spec:
   selector:
-    app: myapp
+    app: ngnix
   type: LoadBalancer
   ports:
   - port: 9092
