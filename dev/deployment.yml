@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: ngnix
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: ngnix
   template:
     metadata:
       labels:
-        app: myapp
+        app: ngnix
     spec:
       containers:
-      - name: myapp
+      - name: ngnix
         image: nginx
         resources:
           limits:
